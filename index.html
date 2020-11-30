@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Tic-Tac-Toe</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="Zachary Taylor">
+	<link rel="stylesheet" href="style.css">
+	<meta name="description" content="">
+	<link rel="shortcut icon" href="" type="image">
+	<meta property="og:image" content="">
+	<meta property="og:description" content="">
+	<meta property="og:title" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<main><br><br>
+		<div class="header">
+			<h1>Tic-Tac-Toe</h1>
+		</div><br><br>
+		<div class="gameInfo">
+			<p id="player">Player: Start X</p>
+			<p id="turn">Turn: 0</p>
+		</div><br><br>
+		<div class="gameArea">
+            <!-- button32 = Colum 3 Row 2 -->
+			<div onclick="Placeing('11')" id="button11" class="button1 button">
+			</div>
+			<div onclick="Placeing('12')" id="button12" class="button2 button">
+			</div>
+			<div onclick="Placeing('13')" id="button13" class="button3 button">
+			</div>
+			<div onclick="Placeing('21')" id="button21" class="button4 button">
+			</div>
+			<div onclick="Placeing('22')" id="button22" class="button5 button">
+			</div>
+			<div onclick="Placeing('23')" id="button23" class="button6 button">
+			</div>
+			<div onclick="Placeing('31')" id="button31" class="button7 button">
+			</div>
+			<div onclick="Placeing('32')" id="button32" class="button8 button">
+			</div>
+			<div onclick="Placeing('33')" id="button33" class="button9 button">
+			</div>
+		</div><br><br>
+		<div class="WinCount">
+			<h3>Wins</h3><br>
+			<p id="xWins">X - 0 wins</p>
+			<p id="oWins">O - 0 wins</p>
+		</div><br>
+		<div class="reset">
+			<div onclick="restart()" class="resetButton">Restart</div>
+		</div>
+	</main>
+	<script src="script.js"></script>
+</body>
+</html>
+
